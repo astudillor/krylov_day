@@ -1,0 +1,38 @@
+\documentclass{article}
+\usepackage[affil-it]{authblk}
+\title{Preconditioning of Large-Scale Saddle Point Systems
+  for Coupled Flow Problems}
+\author{Heiko Weichelt}
+\affil{PhD student at Max Planck Institute for Dynamics of Complex
+    Technical Systems Magdeburg, Germany}
+\date{February 2, 2015}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\date{02.09.2012}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\maketitle
+In order to explore boundary feedback stabilization of coupled flow
+problems, we consider the Navier-Stokes equations that describe
+instationary, incompressible flows coupled with a diffusion convection
+equation. Using a standard finite element discretization, we get a
+differential-algebraic system of differential index two. We show how
+to reduce this index with a projection method to get a generalized
+state space system, where a linear quadratic control approach can be
+applied.
+
+This leads to large-scale saddle point systems which have to be solved
+in a threefold nested iteration. For obtaining a fast iterative
+solution of those non-symmetric systems, we derive efficient
+preconditioners based on the approaches due to Wathen et al. [{\sc
+  Elamn/Silvester/Wathen 2005, Stoll/Wathen 2011}]. Finally, we show
+recent numerical results regarding the arising nested iteration.
+\end{document}
+
+%%% Local Variables: 
+%%% TeX-PDF-mode:t
+%%% auto-fill-function:nil
+%%% mode:auto-fill
+%%% flyspell-mode:nil
+%%% mode:flyspell
+%%% ispell-local-dictionary: "american"
+%%% End: 

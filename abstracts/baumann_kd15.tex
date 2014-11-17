@@ -1,0 +1,29 @@
+\documentclass{article}
+
+\usepackage[affil-it]{authblk}
+\usepackage{amsmath,amssymb,mathtools}
+
+\title{Krylov methods for shifted linear systems}
+\author{Manuel Baumann}
+\affil{PhD student at TU Delft}
+\date{February 2, 2015}
+
+\begin{document}
+\maketitle
+
+In my research, we focus on Krylov methods for so-called \textit{shifted linear systems} of the form
+\begin{align}
+\label{shifted}
+ (A - \omega_k I) \mathbf{x}_k = \mathbf{b},
+\end{align}
+where $\{\omega_k\}_{k=1}^K \in \mathbb{C}$ is a sequence of distinct \textit{shifts}. During the last 20 years, almost every Krylov method has been adapted to solve \eqref{shifted} efficiently for many shifts. In my presentation, I will show you how multi-shift Krylov methods work and, afterwards, point to some more recent research questions like:
+\begin{itemize}
+ \item Can we allow multiple right-hand sides?
+ \item Which preconditioners preserve the shifted structure?
+ \item Can we apply restarting and nested algorithms?
+ \item Can we benefit from deflation?
+ \item Where do shifted systems arise in practice?
+\end{itemize}
+
+
+\end{document}

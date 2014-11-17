@@ -1,0 +1,27 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[affil-it]{authblk}
+
+\title{Krylov subspace methods for matrix equations which include matrix 
+functions}
+\author{Patrick K{\"u}rschner}
+\affil{PhD student Max Planck Institute for Dynamics of Complex Technical
+Systems, Germany}
+\date{February 2, 2015}
+\begin{document}
+\maketitle
+
+We consider the numerical solution of large-scale Lyapunov equations of the form
+\begin{align*}
+ AX+XA^T+f(A)BB^T+BB^Tf(A)=0,\quad A\in\mathbb{R}^{n\times
+n},~ B\in\mathbb{R}^{n\times m},
+\end{align*}
+where $f$ is an analytic function of $A$. 
+Such matrix equations arise in certain model order reduction methods.
+Our focus are projection type
+approaches which employ rational or extended Krylov subspaces.
+For dealing with the above problem we propose efficient methods that deal
+with both the Lyapunov equation and the matrix function $f(A)$
+at the same time.
+\end{document}

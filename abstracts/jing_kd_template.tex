@@ -1,0 +1,18 @@
+\documentclass{article}
+
+\usepackage[affil-it]{authblk}
+
+\title{A conjugate gradient based method for frictional contact problems}
+\author{\underline{J. Zhao}, E.A.H. Vollebregt and C.W. Oosterlee}
+\affil{Delft Universiry of Technology}
+\date{February 2, 2015}
+
+\begin{document}
+\maketitle
+
+In the simulation of railway vehicles dynamics, the interaction between vehicles' wheels and rails attracts a lot of interest, involving the solution of frictional contact problems. Frictional stress arises between two contacting bodies when they are brought into relative motion. The question is to find out which parts of the surfaces are sticking together versus where local relative sliding occurs, and further to find the distribution of frictional stress. Fast solvers are demanded for such problems.
+
+
+In this talk, I would like to present a conjugate gradient based method, called TangCG, which is incorporated in an active set strategy. One significant difference with the conventional solvers lies in the change of unknowns in the slip area, where the magnitude of tractions reaches the traction bound. Instead of using tractions there, we solve for angles, since they uniquely determine the tractions. This yields a transformation of the governing equations. A linearization technique is employed for some necessary approximation. Moreover, the fast Fourier transform (FFT) is adopted to accelerate the matrix-vector products encountered in the algorithm. Numerical tests confirm the efficiency and robustness of our method. 
+
+\end{document}

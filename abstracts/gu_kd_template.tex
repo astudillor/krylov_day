@@ -1,0 +1,46 @@
+\documentclass{article}
+
+\usepackage[affil-it]{authblk}
+\usepackage{amsmath,amssymb}
+\usepackage{bm}
+
+\title{Recent progresses in Krylov subspace methods for solving complex symmetric linear systems}
+\author{Xian-Ming Gu}
+\affil{PhD student at Rijksuniversiteit Groningen and University of Electronic Science and Technology of China}
+\date{February 2, 2015}
+
+\begin{document}
+\maketitle
+Complex symmetric linear systems (CSLSs) with the following form
+\begin{equation*}
+A{\bm x} = {\bm b}, \quad\ A\neq A^H,\ \mathrm{but}\ A = A^T \in
+\mathbb{C}^{n\times n},\quad {\bm b}\in \mathbb{C}^n
+\end{equation*}
+arise in many important applications such as numerical computations
+in quantum chemistry, eddy current problems, modeling the waveguide
+discontinuities and electromagnetic simulations. Hence, there is a
+strong need for the fast solutions of complex symmetric linear systems.
+During the past few years, a variety of specified Krylov subspace methods
+(KSMs) for solving such systems are proposed and used, such as COCG, COCR,
+QMR-SYM and BiCGCR methods.
+
+In this talk, I will mainly revisit and focus on SCBiCG, which is also
+known as one of methods for solving such linear system. SCBiCG can be
+derived by substituting a matrix polynomial, which is expressed by the
+complex conjugate coefficient matrix and initial residual vector, to
+the initial shadow residual of the BiCG algorithm. Moreover, we clarify
+that SCBiCG can be transformed to some methods which have been previously
+proposed. Besides, in our talk we will prove that the preconditioned BiCGCR
+is mathematically equivalent to preconditioned COCR in detail, and then give
+an overview of the recent progress in other KSMs with suitable preconditioning
+techniques for solving CSLSs. Finally, numerical experiments involving many
+electromagnetic model problems are employed to investigate the convergence
+behaviors of these solvers, and then some remarks on future research of this
+topic will be also summarized.
+\newline
+\newline
+\indent This is joint work with Ting-Zhu Huang, Liang Li, Tomohiro Sogabe,
+Markus Clemens, Bruno Carpentieri, Hou-Biao Li.
+
+
+\end{document}

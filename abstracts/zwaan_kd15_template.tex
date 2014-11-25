@@ -1,0 +1,79 @@
+\documentclass{article}
+
+\usepackage[affil-it]{authblk}
+
+\title{My research on Krylov methods}
+\author{Ian Zwaan}
+\affil{PhD student at TU/e}
+\date{February 2, 2015}
+
+\begin{document}
+\maketitle
+
+\begin{center}
+  \bf NOTE: please remove the references if this thing needs to be
+  shorter (and this comment).
+\end{center}
+
+The field of values may be an excellent tool for generating a spectral
+inclusion region: it is easy to approximate numerically, and for many
+matrices this region fits relatively tightly around the eigenvalues.
+However, for some matrices the field of values may be a poor eigenvalue
+inclusion region: the numerical radius may be much larger than the
+spectral radius. We show that balancing the matrix may be helpful for
+generating a quality inclusion region based on the field of values. and
+introduce a new Krylov based balancing method. We believe that both the
+(sparse) balancing and the new ``Krylov and balance'' technique,
+combined with a projected field of values, render spectral inclusion
+regions that may be hard to beat in both quality and efficiency.
+
+\begin{enumerate}
+\setlength{\itemsep}{0pt}
+\footnotesize
+
+\item \textsc{T.~Betcke}, \emph{Optimal scaling of generalized and
+  polynomial eigenvalue problems}, SIAM, J. Matrix Anal. Appl., 30
+  (2008), pp.~1320--1338.
+
+\item \textsc{T.-Y.~Chen and J.~W.~Demmel}, \emph{Balancing sparse
+  matrices for computing eigenvalues}, Linear Algebra and Its
+  Applications, 309 (2000), pp.~261--287.
+
+\item \textsc{M.~E.~Hochstenbach, D.~A.~Singer, and P.~F.~Zachlin},
+  \emph{Numerical approximation of the field of values of the inverse of
+  a large matrix}, Textos de Mathematica, 44, pp.~59--71.
+
+\item \rule{1cm}{1pt}, \emph{Eigenvalue inclusion regions from inverses
+  of shifted matrices}, Linear Algebra Appl., 429 (2008),
+  pp.~2481--2496.
+
+\item \textsc{R.~A.~Horn and C.~R.~Johnson}, \emph{Matrix Analysis},
+  Cambridge University Press, Cambridge, Uk, 1985.
+
+\item \textsc{C.~R.~Johnson}, \emph{Numerical determination of the field
+  of values of a general complex matrix}, SIAM J. Numer. Anal., 15
+  (1978), pp.~595--602.
+
+\item \textsc{T.~A.~Manteuffel and G.~Starke}, \emph{On hubyrid
+  iterative methods for nonsymmetric systems of linear equations},
+  Numer.  Math., 73 (1996), pp.~489--506.
+
+\item \emph{The Matrix Market},
+  \texttt{http://math.nist.gov/MatrixMarket/}, a repository for test
+  matrices.
+
+\item \textsc{G.~W.~Stewart}, \emph{A Krylov-Schur algorithm for large
+  eigenproblems}, SIAM J. Matrix Anal. Appl., 23 (2001/02),
+  pp.~601--614.
+
+\item \textsc{H.~A.~van~der~Vorst}, \emph{Iterative Krylov methods for
+  Large Linear Systems}, vol.~13 of Cambridge Monographs on Applied and
+  Computational Mathematics, Cambridge University Press, Cambridge, UK,
+  2003.
+
+\item \textsc{D.~S.~Watkins}, \emph{A case where balancing is harmful},
+  Electron. Trans. Numer. Anal., 23 (2006), pp.~1--4.
+
+\end{enumerate}
+
+\end{document}

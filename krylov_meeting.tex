@@ -1,13 +1,16 @@
 \documentclass{article}
 
 \usepackage{color}
+\usepackage{hyperref}
+\usepackage{pdfpages}
 
-\title{Dutch Seminar on Krylov subspace methods \\(Krylov day)}
-\author{TU Delft SIAM Student Chapter}
+
+\title{\bf Student Krylov Day 2015}
+\author{\href{http://sscdelft.github.io/activities/2015/02/02/krylov-day.html}{SIAM Student Chapter Delft}}
 \date{February 2, 2015}
 \begin{document}
 \maketitle
-\section{Introduction}
+\section*{Prefix}
 Krylov subspace methods is an important tool which has been applied successfully to solve different problems 
 in the Numerical Algebra. The Netherlands has been a pioneer country in the developing of Krylov method.
 Methods like the Conjugate Gradient Squared (CGS), Bi-Conjugate Gradient Stabilized (BiCGSTAB), Nested GMRES (GMRESR), and the Induced Dimension Reduction method (IDR)  
@@ -17,68 +20,54 @@ to bring together the young researcher to provide an
 overview of the state-of-the-art of Krylov subspaces methods and encourage 
 the collaboration among them.
 \newpage
-\section{Program}
+\section*{Program}
 \begin{table}[h]
-\begin{tabular}{|l|l|l|}
+\begin{tabular}{lll}
+10:00 - 10:10 & Reinaldo & Welcoming \\
+10:10 - 10:50 & P. Sonnefeld & The story of IDR(s) \\
 \hline
-10:00 to 10:10 & Reinaldo & Welcoming \\
-10:15 to 10:45 & Heiko & Preconditioning of Large-Scale Saddle Point Systems \\ 
- & & for Coupled Flow Problems\\
-10:45 to 11:00 & & Coffee at EWI\\ 
-11:00 to 11:30 & Manuel & Krylov methods for shifted linear systems\\
-11:30 to 12:00 & Patrick &  Krylov subspace methods for matrix equations\\
- & & which include matrix functions\\
-12:00 to 13:30 & &  Lunch at TUD Sports Center and campus tour\\
-13:30 to 14:00 & & Talk 4\\
-14:00 to 14:30 & & Talk 5\\
-14:30 to 15:00 & & Talk 6\\
-15:00 to 15:15 & &  Coffee at EWI \\
-15:15 to 16:00 & & Talk 7 (``historic talk'' by professor)\\
-16:00 to 16:10 & &  Closing\\
-16:15 to 18:30 & & Beestenmarkt (first beer paid by SSC) \\
+11:00 - 11:20 & Manuel & Krylov methods for shifted linear systems \\
+11:20 - 11:40 & Xian-Ming & Recent progresses in Krylov subspace methods\\
+                        & & for solving complex symmetric linear systems\\
+11:40 - 12:00 & Ian & tba\\
 \hline
+12:00 - 13:30 & & Lunch at TU Delft Sports Center \\
+\hline
+13:00 - 13:20 & Heiko & Preconditioning of Large-Scale Saddle Point Systems\\
+                    & & for Coupled Flow Problems\\
+13:20 - 13:40 & J\"orn & A Krylov Subspace Approach to Modeling of \\
+                     & & Wave Propagation in Open Domains\\
+13:40 - 14:00 & Jing & A conjugate gradient based method for \\
+                   & & frictional contact problems\\
+\hline
+14:30 - 14:50 & Tom{\'a}{\v s} & On the numerical behaviour of the CG method\\
+14:50 - 15:10 & Pat & Krylov subspace methods for matrix equations \\
+                  & & which include matrix 
+functions\\
+15:10 - 15:30 & Ana & On Low-rank Updates of Matrix Functions\\
+\hline
+16:00 - 16:20 & Reinaldo & Induced Dimension Reduction method \\
+            & & to solve the Quadratic Eigenvalue Problem \\
+16:20 - 16:40 & Mario & Rational Least Squares Fitting using Krylov Spaces\\
+16:40 - 17:00 & Sarah & Probabilistic bounds for the matrix condition number \\
+                    & & with extended Lanczos bidiagonalization\\
+\hline
+17:00 - 18:00 & & Snacks \& drinks at TU Delft
 \end{tabular}
 \end{table}
-
-% \subsection{Students (min 5, max 6)}
-% \begin{table}[h]
-%  \centering
-%  \begin{tabular}{|l|l|l|c|}
-%  \hline
-%  \textbf{Name} & \textbf{Topic} & \textbf{Uni} & \textbf{confirmed ?}\\
-%  \hline
-%  Manuel Baumann & Krylov methods for shifted linear systems & TU Delft & yes\\
-%  Reinaldo Astudillo & IDR(s) for eigenvalue computation & TU Delft & yes \\
-%  Yue & & TU Delft & no \\
-%  Joost & & TU Delft & no \\
-%  Ian Zwaan & & TUE & no \\
-%  Sarah Graaf & & TUE & no \\
-% 
-%  \hline
-%  \end{tabular}
-% 
-% \end{table}
-% 
-% \subsection{Staff (min 1, max 2)}
-% \begin{itemize}
-%  \item Kees Vuik, TUD
-%  \item Martin van Gijzen, TUD
-%  \item Domenico Lahaye, TUD
-%  \item Peter Sonneveld, TUD
-%  \item Mike Botchev, UT
-%  \item Sleijpen, vd Vorst, UU
-%  \item {\color{red}Michiel Hochstenbuch, TUE}
-%  \item Jens-Peter Zemke, TUHH (?)
-% \end{itemize}
-% 
-% \subsection{Budget}
-% In total 200 \$ $\approx$ 150 EUR.
-% \begin{itemize}
-%  \item Coffe: free if from EWI
-%  \item Cake: We bake one (= breakfast)
-%  \item Lunch at aula: 8EUR pP
-%  \item Beestenmarkt: Cake or beers for 5 EUR
-% \end{itemize}
-
-\section{Abstracts}
+In the evening we will go to \href{http://www.burgerz.nl/en/contact/delft}{Burgerz} - a nice restaurant close to the main train station. Everybody is welcome to join!
+% \newpage
+% \section{Book of abstracts}
+\includepdf[pages={1}]{abstracts/baumann_kd15.pdf}
+\includepdf[pages={1}]{abstracts/gu_kd_template.pdf}
+\includepdf[pages={1}]{abstracts/zwaan_kd15_template.pdf}
+\includepdf[pages={1}]{abstracts/weichelt_abstract_KrylovDay_2015.pdf}
+\includepdf[pages={1}]{abstracts/kd_jtzimmerling.pdf}
+\includepdf[pages={1}]{abstracts/jing_kd_template.pdf}
+\includepdf[pages={1}]{abstracts/kd15_gergelits.pdf}
+\includepdf[pages={1}]{abstracts/abstract_kuerschner.pdf}
+\includepdf[pages={1}]{abstracts/susnjara_template.pdf}
+\includepdf[pages={1}]{abstracts/kd_template_Reinaldo.pdf}
+\includepdf[pages={1}]{abstracts/kd_berljafa.pdf}
+\includepdf[pages={1}]{abstracts/kd15_SarahGaaf.pdf}
 \end{document}

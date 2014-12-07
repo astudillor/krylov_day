@@ -1,0 +1,62 @@
+\documentclass{article}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{graphicx}
+\usepackage{xcolor}
+
+\title{Rational Least Squares Fitting\\using Krylov Spaces}
+\author
+{
+  \underline{Mario Berljafa}\thanks
+  {
+    School of Mathematics, The University of Manchester,
+    Alan Turing Building, Oxford Road, M13\, 9PL Manchester, United Kingdom,
+    \texttt{mario.berljafa@manchester.ac.uk}, \texttt{stefan.guettel@manchester.ac.uk}
+  }
+  \and Stefan G\"{u}ttel\footnotemark[1]
+}
+\date{\empty}
+
+\begin{document}
+\maketitle
+For given matrices $\lbrace A, F\rbrace\subset\mathbb{C}^{N\times N}$
+and a vector $\mathbf v\in\mathbb{C}^N$,
+we consider the problem
+of finding a rational function $R_m^{\min}$ of type $(m, m)$ such that
+\begin{equation*}
+  %R_m^{\star} = \mathop{\operatorname{argmin}}_{R_m}\|F\mathbf v-R_m^{}(A)\mathbf v\|_2^2,
+  \|F\mathbf v-R_m^{}(A)\mathbf v\|_2^2 \to \min,
+\end{equation*}
+and propose an iterative algorithm \cite{BeGu14, BeGu15}
+for its solution.
+At each iteration the algorithm constructs a rational Krylov space
+$\mathcal{Q}_{m+1}(A, \mathbf v)$ and manipulates
+an associated Arnoldi decomposition
+to find better approximations to the
+poles of $R_m^{\min}$.
+In the special case when
+$A=\operatorname{diag}(\lambda_j^{})$ and $F=\operatorname{diag}(\psi_j^{})$
+are diagonal we have a weighted rational least squares fitting problem
+\begin{math}
+  \sum_{j=1}^{N}|v_j|^2\cdot|\psi_j^{}-R_m^{}(\lambda_j^{})|^2 \to \min,
+\end{math}
+and compare our method to the popular \emph{vector fitting} \cite{GuSe99}.
+
+
+\begin{thebibliography}{10}
+\bibitem{BeGu14}
+{\sc M.~Berljafa and S.~G{\"u}ttel}, {\em {A} {R}ational {K}rylov {T}oolbox for
+  {MATLAB}}, {MIMS EPrint} 2014.56, Manchester Institute for Mathematical
+  Sciences, The University of Manchester, UK, 2014.
+\newblock Available for download at \texttt{http://guettel.com/rktoolbox/}.
+\bibitem{BeGu15}
+  {\sc M.~Berljafa and S.~G\"{u}ttel}, {\em {Generalized rational Krylov
+      decompositions with an application to rational approximation}},
+  MIMS EPrint 2014.59, Manchester Institute for Mathematical Sciences,
+  The University of Manchester, UK, 2014. 
+\bibitem{GuSe99}
+  {\sc B.~Gustavsen and A.~Semlyen}, {\em Rational approximation of frequency
+    domain responses by vector fitting}, IEEE Trans. Power Del., 14 (1999),
+  pp.~1052--1061.
+\end{thebibliography}
+
+\end{document}

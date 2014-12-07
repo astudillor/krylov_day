@@ -1,0 +1,25 @@
+\documentclass{article}
+
+\usepackage[affil-it]{authblk}
+
+\title{Probabilistic bounds for the matrix condition number with extended Lanczos bidiagonalization}
+\author{Sarah W. Gaaf\thanks{Joint work with Michiel E. Hochstenbach}}
+\affil{PhD student at Eindhoven University of Technology}
+
+\date{February 2, 2015}
+
+\begin{document}
+\maketitle
+Reliable estimates for the condition number of a large (sparse) matrix $A$ are important in many applications.
+To get an approximation for the condition number $\kappa(A)$, an approximation for the smallest
+singular value is needed. Krylov subspaces are usually unsuitable for finding a good approximation
+to the smallest singular value.
+Therefore, we study extended Krylov subspaces which turn out to be ideal for the simultaneous
+approximation of both the smallest and largest singular value of a matrix.
+First, we develop a new extended Lanczos bidiagonalization method.
+With this method we obtain a lower bound for the condition number.
+Moreover, the method also yields probabilistic upper bounds for $\kappa(A)$.
+The user can select the probability with which the upper bound holds,
+as well as the ratio of the probabilistic upper bound and the lower bound.
+\end{document}
+

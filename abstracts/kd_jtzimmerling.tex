@@ -1,0 +1,22 @@
+\documentclass{article}
+
+\usepackage[affil-it]{authblk}
+
+\title{A Krylov Subspace Approach to Modeling of Wave Propagation in Open Domains}
+\author{J\"orn Zimmerling}
+\affil{PhD student at TU Delft}
+\date{February 2, 2015}
+
+\begin{document}
+\maketitle
+
+Simulating electromagnetic or acoustic wave propagation in complex open structures is extremely important in many areas of science and engineering. In a wide range of applications, ranging from photonics and plasmonics to seismic exploration, efficient wave field solvers are required in various design and optimization frameworks.  
+ 
+In this talk, a Krylov subspace projection methodology is presented to efficiently solve wave propagation problems on unbounded domains. To model the extension of the computational domain to infinity, an optimal, frequency independent complex scaling method is introduced, that allows us to simulate wave propagation on unbounded domains provided we compute the propagating waves via a stability-corrected wave function.
+
+In our Krylov subspace framework, this wave function is approximated by polynomial or rational functions, which are obtained via Krylov subspace projection on Polynomial, Extended and Rational Krylov subspaces. In this talk we compare the convergence within these three Krylov subspaces. Further we show how symmetry relations in the finite difference approximation of wave equations can be used to efficiently construct Polynomial and Extended Krylov subspaces. 
+
+Numerical examples illustrate the performance of the method and show that our Krylov resonance expansions significantly outperform conventional solution methods.
+
+
+\end{document}

@@ -2,6 +2,7 @@
 
 \usepackage[affil-it]{authblk}
 \usepackage{amsmath,amssymb,mathtools}
+\usepackage{hyperef}
 
 \title{Krylov methods for shifted linear systems}
 \author{Manuel Baumann}
@@ -25,11 +26,11 @@ where $\{\omega_k\}_{k=1}^K \in \mathbb{C}$ is a sequence of distinct \textit{sh
  \item Where do shifted systems arise in practice?
 \end{itemize}
 
-One of the above questions has been answered in \cite{BG14}.
+\noindent One of the above questions has been answered in \cite{BG14}.
 
 \begin{thebibliography}{10}
 \bibitem{BG14}
 {\sc M.~Baumann and M.B.~van Gijzen}, {\em {N}ested {K}rylov methods for shifted linear systems}, Technical Report 14-01, Delft University of Technology, The Netherlands, 2014.
-\newblock Available for download at \texttt{http://manuelbaumann.de/phd.html}.
+\newblock Available for download at \href{http://manuelbaumann.de/phd.html}{http://manuelbaumann.de/phd.html}.
 \end{thebibliography}
 \end{document}

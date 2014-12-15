@@ -25,7 +25,7 @@ where $\{\omega_k\}_{k=1}^K \in \mathbb{C}$ is a sequence of distinct \textit{sh
  \item Where do shifted systems arise in practice?
 \end{itemize}
 
-\noindent One of the above questions has been answered in \cite{BG14}.
+One of the above questions has been answered in \cite{BG14}.
 
 \begin{thebibliography}{10}
 \bibitem{BG14}

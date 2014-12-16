@@ -9,7 +9,7 @@
 
 \begin{document}
 \maketitle
-\setcounter{page}{10}
+\setcounter{page}{11}
 The method of conjugate gradients (CG) is computationally based on short recurrences. Assuming exact arithmetic, they ensure global orthogonality of the residual vectors which span the associated Krylov subspace. Due to rounding errors in practical computations, however, the use of short recurrences leads to the loss of the global orthogonality and even linear independence of the computed residual vectors. Consequently, the computed Krylov subspaces are typically not of full dimensionality which causes a significant delay of convergence in finite precision CG computations.
 
 As a result, the practical CG behaviour significantly differs, in general, from the behaviour of CG in exact arithmetic. Through the example of composite polynomial convergence bounds based on Chebyshev polynomials we show that any consideration concerning the CG rate of convergence relevant to practical computations may not assume exact arithmetic and must include the analysis of effects of rounding errors.

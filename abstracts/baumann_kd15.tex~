@@ -2,7 +2,7 @@
 
 \usepackage[affil-it]{authblk}
 \usepackage{amsmath,amssymb,mathtools}
-\usepackage{hyperef}
+\usepackage{hyperref}
 
 \title{Krylov methods for shifted linear systems}
 \author{Manuel Baumann}

@@ -1,0 +1,73 @@
+
+\documentclass{beamer}
+
+%\setbeamertemplate{navigation symbols}{}
+%\usepackage[utf8x]{inputenc}
+%\usepackage{default}
+\usepackage{tikz}
+\usepackage{fancybox}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage[curves]{struktex}
+\usepackage[ruled]{algorithm}
+\usepackage{algorithmic}
+%\usepackage{sansmathaccent}
+%\usepackage{bbding}
+\usepackage{pifont}
+\usepackage{epstopdf}
+\usepackage{multirow}
+
+\definecolor{DarkSlateGray}{rgb}{0.184314,0.309804,0.309804}
+
+%Mathbb
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\C}{\mathbb{C}}
+
+\DeclareMathOperator*{\argmin}{\arg\!\min}
+\DeclareMathOperator{\spann}{span}
+
+\newcounter{saveenumi}
+\newcommand{\seti}{\setcounter{saveenumi}{\value{enumi}}}
+\newcommand{\conti}{\setcounter{enumi}{\value{saveenumi}}}
+
+%Matrix Alignment
+\makeatletter
+\renewcommand*\env@matrix[1][c]{\hskip -\arraycolsep
+\let\@ifnextchar\new@ifnextchar
+\array{*\c@MaxMatrixCols #1}}
+\makeatother
+
+
+\mode<presentation>
+{\usetheme{boadilla} % This theme will be changed into the TUDelft lay-out
+ \setbeamercovered{transparent}}
+\definecolor{tudblue}{rgb}{.004,.50,.78} % definition TUDelft blue color
+\definecolor{tudlightblue}{rgb}{.004,.70,.98}
+\setbeamercolor{structure}{fg=tudblue}
+\setbeamercolor{palette primary}{fg=white,bg=tudblue!85}       % Right field
+\setbeamercolor{palette secondary}{fg=white,bg=tudblue!85}     % Middle field
+\setbeamercolor{palette tertiary}{fg=tudblue!85,bg=tudblue!85} % Left field
+\setbeamersize{text margin left=1cm}
+\setbeamersize{text margin right=1cm}
+
+\setbeamersize{sidebar width left=0.5cm}
+\title{\bf Student Krylov Day 2015}
+\date[]{February 2, 2015}
+\tikzset{textlabel/.style={color=white}}
+\begin{document}
+\setbeamertemplate{sidebar left}  % tudblue square left above
+{\vfill
+\rlap{%\hskip0.1cm
+\includegraphics[scale=0.33]{TUDelft/beamer-tudelft-bies.jpg} }
+\vskip-5pt}
+\maketitle
+
+
+
+\begin{frame}
+TODO
+\end{frame}
+
+
+\end{document}

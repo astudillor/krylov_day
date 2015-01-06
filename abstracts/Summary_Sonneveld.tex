@@ -1,0 +1,48 @@
+\documentclass[12pt,a4]{article}
+\parindent=0.0pt
+%
+\begin{document}
+\setcounter{page}{4}
+\begin{center}
+{\Large IDR-CGS-BiCGSTAB-IDR($s$)\\- a case of serendipity -\\
+\mbox{}\\}
+{\em Peter Sonneveld}
+\footnote{Delft University of Technology,
+Delft Institute of Applied Mathematics, Mekelweg 4, 2628 CD, The Netherlands.
+E-mail: {\tt P. Sonneveld, p.sonneveld@tudelft.nl}}
+\end{center}
+In about 1976, I was preparing a renovation of the elementary course 
+on numerical analysis in Delft University. In relation to the problem 
+of solving a single nonlinear equation iteratively, I wondered whether 
+the so-called `secant method' could be generalized to systems of $N$ nonlinear 
+equations with $N$ unknowns.
+\par
+Before starting to read everything on a subject, I always try 
+to think about it unbiased, and so I started with (probably) re-inventing the 
+wheel. 
+Had I seen the book by Ortega and Rheinboldt at that 
+time, CGS, BiCGSTAB and IDR(s) probably wouldn't exist today. 
+After a week of rather primitive numerical experiments, I decided that
+generalisations of the secant method to $N$ dimensions were far too
+complicated for an elementary course. However, the experiments 
+showed a surprising phenomenon, that appeared to be useful in the 
+machinery of solving large sparse nonsymmetric {\em linear} systems. 
+\par
+The first application of this `new wheel' was called IDR (Induced 
+Dimension Reduction). Afterwards, CGS (Conjugate Gradients Squared)
+was developed as an `improvement' of IDR, and also for other reasons.
+From then, starting with BiCGStab in cooperation with Henk van der Vorst, 
+a lot of other methods of this kind
+were developed by many others. This went on until about 10 years ago.  
+\par
+In this short presentation I'll give a reconstruction
+of the strange history of these so-called 
+`Lanczos-type product methods'.
+It will be explained why this `sleeping theory' woke up just after
+my retirement in 2006,
+resulting in a brand new family of methods: IDR($s$).
+Since history is a continuing story, also some recently discovered 
+interesting features of the IDR($s$) methods are already part of it.
+Some will be mentioned in the lecture.    
+
+\end{document}
